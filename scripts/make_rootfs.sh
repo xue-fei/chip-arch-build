@@ -6,7 +6,7 @@ test -e rootfs || mkdir rootfs
 let CLEAR && rm -rf rootfs/* ubi.img ubifs.img ubi.img.sparse ArchLinuxARM-armv7-latest.tar.gz
 
 echo "Downloading generic armv7 image"
-wget -nc http://de7.mirror.archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
+wget -nc http://mirror.archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
 
 echo "Entering fakeroot and making image"
 fakeroot bash &>$BUILD_ROOTDIR/logs/create_rootfs.log <<FAKEROOT_END
