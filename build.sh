@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/bash
 
 test -e logs || mkdir logs
 
